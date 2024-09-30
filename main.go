@@ -46,8 +46,8 @@ func main() {
 	flag.Parse()
 
 	if o.clientID == "" || o.clientSecret == "" {
-		log.Print(`You need to set oauth2 credentials.
-Create a service account at https://eu.api.ovh.com/console/?section=%2Fme&branch=v1#post-/me/api/oauth2/client with AUTHORIZATION_CODE flow
+		log.Printf(`You need to set oauth2 credentials.
+Create a service account at https://eu.api.ovh.com/console/?section=%%2Fme&branch=v1#post-/me/api/oauth2/client with AUTHORIZATION_CODE flow
 Then set the following options:`)
 		flag.PrintDefaults()
 		os.Exit(1)
