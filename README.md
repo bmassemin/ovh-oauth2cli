@@ -2,10 +2,23 @@
 
 SSO Client for OVH
 
+## Usage
+
+OVH SDKs are able to read the `ovh.conf` file and fetch the credentials from it.  
+It also includes the Terraform provider. For instance, you can set up the Terraform provider this way:
+```hcl
+provider "ovh" {
+  endpoint           = "ovh-eu"
+}
+```
+
+Then, run `ovh-oauth2cli` in the Terraform root directory. You should be able to execute a `terraform plan`.\
+⚠️ Don't forget to add `ovh.conf` to your `.gitignore` file.
+
 ## Installation
 
 ```
-go install github.com/bmassemin/ovh-oauth2cli@latest
+go install github.com/bmassemin/ovh-oauth2cli@v0.0.2
 ```
 
 ## OVH Configuration

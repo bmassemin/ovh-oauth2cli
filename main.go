@@ -111,7 +111,7 @@ Then set the following options:`)
 		if err != nil {
 			return fmt.Errorf("could not get a token: %w", err)
 		}
-		setEnvVar(token.AccessToken)
+		setEnvVar(o.region, token.AccessToken)
 		return nil
 	})
 	if err := eg.Wait(); err != nil {
@@ -119,12 +119,12 @@ Then set the following options:`)
 	}
 }
 
-func setEnvVar(accessToken string) {
-	confFile := `[default]
-endpoint=ovh-eu
+func setEnvVar(region string, accessToken string) {
+	confFile := fmt.Sprintf(`[default]
+endpoint=ovh-%s
 
-[ovh-eu]
-access_token=` + accessToken
+[ovh-%s]
+access_token=%s`, region, region, accessToken)
 	os.WriteFile("ovh.conf", []byte(confFile), 0644)
 }
 
