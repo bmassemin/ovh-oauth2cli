@@ -63,3 +63,7 @@ Then run `ovh-oauth2cli` with additionnal parameters:
 ```
 ./ovh-oauth2cli -client-id <client_id> -client-secret <client_secret> -server-crt <path_to_server_crt> -server-key <path_to_server_key>
 ```
+
+## Credits
+
+- https://github.com/int128/oauth2cli
