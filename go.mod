@@ -6,7 +6,7 @@ require (
 	github.com/cli/browser v1.3.0
 	github.com/int128/oauth2cli v1.14.0
 	golang.org/x/oauth2 v0.23.0
-	golang.org/x/sync v0.8.0
+	golang.org/x/sync v0.9.0
 )
 
 require (
