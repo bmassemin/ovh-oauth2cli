@@ -18,7 +18,7 @@ Then, run `ovh-oauth2cli` in the Terraform root directory. You should be able to
 ## Installation
 
 ```
-go install github.com/bmassemin/ovh-oauth2cli@v0.0.3
+go install github.com/bmassemin/ovh-oauth2cli@v0.0.4
 ```
 
 ## OVH Configuration
