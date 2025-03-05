@@ -5,7 +5,7 @@ go 1.23.1
 require (
 	github.com/cli/browser v1.3.0
 	github.com/int128/oauth2cli v1.15.1
-	golang.org/x/oauth2 v0.26.0
+	golang.org/x/oauth2 v0.28.0
 	golang.org/x/sync v0.11.0
 )
 
